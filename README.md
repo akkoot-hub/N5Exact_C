@@ -39,7 +39,7 @@ The mathematical legality predicates and runtime safety checks remain part of th
 
 The source uses the C standard library and operating-system APIs for threading and monotonic timing. No third-party C library is required by the current source.
 
-Earlier candidate audits recorded strict GCC and Clang builds and Windows production runs. See docs/PUBLICATION_AUDIT_20261120.md for their provenance. Linux GCC and Clang builds are included in the reproducibility instructions. Windows/MSVC must be validated on the target Windows installation before the release is tagged.
+Earlier candidate audits recorded strict GCC and Clang builds and Windows production runs. See docs/PUBLICATION_AUDIT_20261120.md for their provenance. Linux GCC and Clang builds are included in the reproducibility instructions. The Windows/MSVC x64 Release build and full 68-orbit computation passed at commit `a75a80d`. See the [Windows validation report](docs/RELEASE_VALIDATION_v1.0.0.md) for the artifact hashes and per-orbit comparison.
 
 ## Source encoding
 
