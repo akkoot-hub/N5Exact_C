@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="N5Exact.vcxproj" Id="8019517b-f005-4315-bb5e-7d1f494d35bf" />
+</Solution>

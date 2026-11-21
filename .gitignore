@@ -1,0 +1,58 @@
+# Visual Studio / MSBuild
+.vs/
+x64/
+Debug/
+Release/
+step*_build/
+*.user
+*.suo
+*.vcxproj.user
+*.obj
+*.pch
+*.pdb
+*.ipch
+*.ilk
+*.exe
+*.dll
+*.lib
+
+# Temporary / OS files
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Local non-MSBuild artifacts
+build/
+
+# Nested Visual Studio / MSBuild state and generated intermediates
+**/.vs/
+**/x64/
+**/Debug/
+**/Release/
+*.tlog/
+*.log
+*.recipe
+*.iobj
+*.ipdb
+*.db
+*.vsidx
+*.lastbuildstate
+*.ipch
+*.ilk
+*.idb
+*.pch
+*.sdf
+*.opensdf
+
+# Native GCC/Clang build products
+/N5Exact
+/N5Exact.exe
+*.o
+*.a
+*.so
+*.dylib
+*.gcda
+*.gcno
+*.profraw
+*.profdata

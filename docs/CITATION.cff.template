@@ -1,0 +1,12 @@
+# Reference template. The root-level CITATION.cff is the populated metadata file.
+# Add date-released only after the GitHub Release has actually been created.
+cff-version: 1.2.0
+message: "If you use this software, please cite the version archived for your work."
+title: "N5Exact_C: Exact Counting of 5-bit Complete Permutations"
+type: software
+authors:
+  - family-names: "Wang"
+    given-names: "Kai"
+    orcid: "https://orcid.org/0009-0006-9441-0466"
+version: "1.0.0"
+repository-code: "https://github.com/akkoot-hub/N5Exact_C"
