@@ -4,7 +4,7 @@
 
 The program rebuilds the size-matrix catalog and symmetry orbits at runtime, evaluates each generated orbit through the all-even or odd production path, combines modular residues, and prints the resulting integer counts.
 
-> **Release status:** N5Exact_C v1.0.0 release candidate. The release metadata identifies Kai Wang as the individual copyright holder and software author, and the repository is designated as [akkoot-hub/N5Exact_C](https://github.com/akkoot-hub/N5Exact_C). Publication under MIT is based on the project owner's instruction to proceed on the assumption of individual ownership. Before making the repository public, the owner should confirm that no institutional, funder, employer, co-author, or other prior agreement restricts publication.
+> **Release status:** N5Exact_C v1.0.0 release candidate. The release metadata identifies Kai Wang as the individual copyright holder and software author, and the repository is designated as [akkoot-hub/N5Exact_C](https://github.com/akkoot-hub/N5Exact_C). Publication under MIT is based on the project owner's instruction to proceed on the assumption of individual ownership. The source repository is public. The owner remains responsible for confirming that no institutional, funder, employer, co-author, or other prior agreement restricts publication.
 
 ## What the program computes
 
@@ -39,7 +39,7 @@ The mathematical legality predicates and runtime safety checks remain part of th
 
 The source uses the C standard library and operating-system APIs for threading and monotonic timing. No third-party C library is required by the current source.
 
-Linux GCC and Clang builds are included in the reproducibility instructions. Windows/MSVC must be validated on the target Windows installation before the release is tagged.
+Earlier candidate audits recorded strict GCC and Clang builds and Windows production runs. See docs/PUBLICATION_AUDIT_20261120.md for their provenance. Linux GCC and Clang builds are included in the reproducibility instructions. Windows/MSVC must be validated on the target Windows installation before the release is tagged.
 
 ## Source encoding
 
@@ -161,10 +161,13 @@ The program exits with a nonzero status if the production computation cannot com
 
 ## Source integrity
 
-`SHA256SUMS.txt` contains SHA-256 checksums for the release files (excluding the checksum manifest itself). Verify them from the repository root with:
+`SHA256SUMS.txt` contains SHA-256 checksums for the release files (excluding the checksum manifest itself). The hashes cover the bytes stored in Git. To verify them with Git and GNU coreutils, read the committed files without checkout line-ending conversion:
 
 ```bash
-sha256sum --check SHA256SUMS.txt
+git show HEAD:SHA256SUMS.txt | while read -r expected path; do
+    actual=$(git show "HEAD:${path#./}" | sha256sum)
+    [ "${actual%% *}" = "$expected" ] || { echo "Mismatch: $path" >&2; exit 1; }
+done
 ```
 
 ## Documentation

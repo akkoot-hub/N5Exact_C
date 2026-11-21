@@ -4,6 +4,8 @@ This is a release-candidate checklist. Items marked **owner confirmation require
 
 ## Source and build
 
+Completed build and run entries below describe earlier candidates. Final acceptance requires logs bound to the selected commit.
+
 - [x] Candidate ZIP identity matched the supplied handoff SHA-256.
 - [x] Remove Visual Studio caches, generated binaries, PDBs, object files, and local user settings from the source release directory.
 - [x] Remove the development-only thread patch.
@@ -30,7 +32,7 @@ This is a release-candidate checklist. Items marked **owner confirmation require
 
 ## Publication metadata — owner confirmation required
 
-- [x] GitHub owner and repository name: `akkoot-hub/N5Exact_C` (repository creation/public visibility still pending).
+- [x] GitHub owner and repository name: `akkoot-hub/N5Exact_C` (public repository verified).
 - [x] Copyright holder recorded as Kai Wang, based on the owner's instruction to proceed on the individual-ownership assumption; owner must still confirm there are no conflicting institutional, funder, employer, or co-author rights.
 - [x] Selected MIT License and populated root `LICENSE` file.
 - [ ] Paper title.
@@ -43,7 +45,7 @@ This is a release-candidate checklist. Items marked **owner confirmation require
 
 ## Archive and DOI
 
-- [ ] Create a clean initial Git commit.
+- [x] Create the initial Git commit.
 - [ ] Inspect `git status` and the complete tracked-file list.
 - [ ] Create a version tag and GitHub Release.
 - [ ] Archive that exact Release with Zenodo.
@@ -60,4 +62,4 @@ This is a release-candidate checklist. Items marked **owner confirmation require
 - Software version: `1.0.0`.
 - Release date: intentionally not set until the GitHub Release exists.
 
-Before making the repository public, the owner should verify the individual-ownership assumption against any institutional, funder, employer, or co-author agreements. The repository itself, GitHub Release, Zenodo archive, DOI, final paper metadata, and DOI-backed Code Availability statement remain to be created or confirmed.
+The owner remains responsible for confirming rights under any applicable agreements. The tagged release, archive DOI and final paper metadata are pending.

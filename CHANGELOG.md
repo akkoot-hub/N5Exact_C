@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased — publication candidate
+## v1.0.0 (release pending)
+
+- Provide a standalone C17 build with MSVC v145 and UTF-8 source encoding.
 
 - Rebuild the legal size-matrix catalog and top-level orbit catalog from the mathematical definition at runtime.
 - Keep the all-even and odd production solvers and the six-prime CRT reconstruction.
