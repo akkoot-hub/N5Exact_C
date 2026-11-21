@@ -8,3 +8,4 @@ authors:
     orcid: "https://orcid.org/0009-0006-9441-0466"
 version: "1.0.0"
 repository-code: "https://github.com/akkoot-hub/N5Exact_C"
+license: MIT
